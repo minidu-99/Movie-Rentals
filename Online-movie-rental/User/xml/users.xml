@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+
+
+    <user id="1">
+        <username>User01</username>
+        <password>$2y$10$aXlTPsH4B2icCHXAENeg.OmaXPvcUt5sVuQBe3wx8ipo3nSEGeON2</password>
+        <rentals> <rental><movieId>2</movieId><movieTitle>Deadpool</movieTitle><rentedOn>2024-10-22</rentedOn><returnDate>2024-10-29</returnDate><returnStatus>no</returnStatus></rental><rental><movieId>4</movieId><movieTitle>Pirates of the Caribbean: The Curse of the Black Pearl</movieTitle><rentedOn>2024-10-22</rentedOn><returnDate>2024-10-29</returnDate><returnStatus>yes</returnStatus></rental></rentals>
+        <role>user</role>
+    </user>
+
+
+    <user id="2">
+        <username>Admin01</username>
+        <password>$2y$10$H5g5Nvl3Ui/bns8qZGRWKe5su9ud0GBEDHPGL8VJgIt73nk.j4i12</password>
+        <email>admin1@gmail.com</email>
+        <rentals/>
+        <role>admin</role>
+    </user>
+<user id="3"><username>Admin</username><password>$2y$10$pC14mbf8IKRJLmNKK3JdZuXuZ8rezSuImXJoW.0sWRGToR/DS.j7m</password><email>Admin@gmail.com</email><rentals/><role>admin</role></user><user id="4"><username>minidu99</username><password>$2y$10$ekvK0pI36Ku1N5TiX9hHb.exR/ARUO2myZmXUqvHqfKXrAmuXiHDO</password><rentals> <rental><movieId>3</movieId><movieTitle>Despicable Me 4</movieTitle><rentedOn>2024-12-26</rentedOn><returnDate>2025-01-02</returnDate><returnStatus>no</returnStatus></rental></rentals><role>user</role></user></users>

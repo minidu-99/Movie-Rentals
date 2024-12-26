@@ -1,0 +1,221 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full height */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-grow: 1; /* Allow container to grow and take up remaining space */
+    margin-top: 20px; /* Adjust this to control spacing between header and content */
+}
+
+/* Header */
+header {
+    background-color: #121212;
+    padding: 15px 30px; /* Increased padding on left and right */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #e74c3c;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.btn-search {
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.user-name {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px;
+    transition: color 0.3s ease; /* Smooth color transition */
+    right: 0; /* Align dropdown to the right edge of the parent */
+}
+
+/* Show dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown when hovering over the dropdown */
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    background-color: #2c2f33; /* Matches overall dark theme */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    z-index: 1;
+    border-radius: 8px; /* More rounded corners */
+    padding: 10px 0;
+    margin-top: 10px; /* Slight space from the username */
+    transform: translateX(-10%); /* Shift it left a bit */
+}
+
+.dropdown-content a {
+    color: #f4f4f4; /* Light text color for readability */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #333; /* Red hover effect */
+    color: white; /* White text on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.user-name:hover {
+    color: #e74c3c; /* Matches the red accent when hovered */
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 250px;
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.sidebar h2 {
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Active link */
+.sidebar ul li a.active {
+    background-color: #444; /* Darker background for active link */
+    color: #e74c3c; /* Highlight active link text */
+}
+
+/* Account Content */
+.account-content {
+    flex-grow: 1;
+}
+
+h2 {
+    color: #e74c3c; /* Red color for heading */
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 20px 0 10px 0;
+    color: #ecf0f1; /* Light color for subheadings */
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px; /* Increased padding for better spacing */
+    border: 1px solid #444; /* Dark border for better visibility */
+    text-align: left;
+}
+
+th {
+    background-color: #444; /* Dark background for header */
+    color: #f4f4f4; /* Light text color */
+}
+
+tbody tr:hover {
+    background-color: #555; /* Slight hover effect for rows */
+}
+
+/* Footer */
+/* Footer */
+footer {
+    background-color: #121212;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Vertically center items if needed */
+    text-align: center; /* Ensure text alignment is center */
+}

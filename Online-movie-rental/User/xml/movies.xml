@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+
+
+    <movie id="1">
+        <title>Beetle juice</title>
+        <genre>Comedy</genre>
+        <description>A recently deceased couple attempts to scare away the new inhabitants of their
+            former home with the help of a mischievous ghost named Beetlejuice.</description>
+        <copies>10</copies>
+        <release-year>1988</release-year>
+        <rating>7</rating>
+        <availability>yes</availability>
+        <trending>yes</trending>
+        <featured>yes</featured>
+        <image>uploads/beetlejuice.jpg</image>
+    </movie>
+    <movie id="2">
+        <title>Deadpool</title>
+        <genre>Action</genre>
+        <description>Wade Wilson, a mercenary, gains superpowers and seeks revenge after undergoing
+            an experimental treatment that disfigures him.</description>
+        <copies>15</copies>
+        <release-year>2024</release-year>
+        <rating>8</rating>
+        <availability>yes</availability>
+        <trending>yes</trending>
+        <featured>yes</featured>
+        <image>uploads/deadpool.jpg</image>
+    </movie>
+    <movie id="3">
+        <title>Despicable Me 4</title>
+        <genre>Animation</genre>
+        <description>Gru, Lucy, and their daughters return for new adventures with the Minions.</description>
+        <copies>11</copies>
+        <release-year>2024</release-year>
+        <rating>8</rating>
+        <availability>yes</availability>
+        <trending>yes</trending>
+        <featured>yes</featured>
+        <image>uploads/dispicable_me_4.jpg</image>
+    </movie>
+    <movie id="4">
+        <title>Pirates of the Caribbean: The Curse of the Black Pearl</title>
+        <genre>Adventure</genre>
+        <description>Captain Jack Sparrow navigates treachery and supernatural elements on the high
+            seas.</description>
+        <copies>5</copies>
+        <release-year>2003</release-year>
+        <rating>8</rating>
+        <availability>yes</availability>
+        <trending>yes</trending>
+        <featured>yes</featured>
+        <image>uploads/pirate_of_THe_carribean.jpg</image>
+    </movie>
+</catalog>

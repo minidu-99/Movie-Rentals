@@ -1,0 +1,180 @@
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #121212;
+    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #e74c3c;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.btn-search {
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.user-name {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px;
+    transition: color 0.3s ease; /* Smooth color transition */
+    right: 0; /* Align dropdown to the right edge of the parent */
+}
+
+/* Show dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown when hovering over the dropdown */
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    background-color: #2c2f33; /* Matches overall dark theme */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    z-index: 1;
+    border-radius: 8px; /* More rounded corners */
+    padding: 10px 0;
+    margin-top: 10px; /* Slight space from the username */
+}
+
+.dropdown-content a {
+    color: #f4f4f4; /* Light text color for readability */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #333; /* Red hover effect */
+    color: white; /* White text on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.user-name:hover {
+    color: #e74c3c; /* Matches the red accent when hovered */
+}
+
+.movie-rental-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 40px 0;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+.movie-poster img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.movie-info {
+    width: 60%;
+    padding-left: 20px;
+}
+
+.movie-info h2 {
+    font-size: 2.5rem;
+    color: #e74c3c;
+}
+
+.movie-info p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.btn-rent, .btn-login-to-rent {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-rent:hover, .btn-login-to-rent:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    background-color: #121212;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,295 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #eee; /* Light text */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('../images/landing.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 180px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker black tint */
+    z-index: 0;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.cta a {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 1.1em;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn {
+    background-color: #e53935;
+    color: white;
+}
+
+.cta .btn.secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.cta .btn:hover {
+    background-color: #c62828;
+}
+
+/* Hero Navigation */
+.hero-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    z-index: 3;
+}
+
+.hero-nav .logo h1 {
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    color: #e74c3c;
+    transition: color 0.3s ease;
+}
+
+.hero-nav .logo h1:hover {
+    color: #fff;
+}
+
+.hero-nav nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.hero-nav nav ul li {
+    margin-left: 20px;
+    position: relative; /* Needed for absolute positioning of dropdown */
+}
+
+/* Styles for links in the navigation */
+.hero-nav nav ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.hero-nav nav ul li a:hover {
+    color: #fff;
+}
+
+/* Drop-down List Styles */
+.hero-nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-nav .dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position dropdown relative to the list item */
+    background-color: #333; /* Dark dropdown background */
+    color: #fff; /* White text */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 0;
+    right: 0; /* Align dropdown to the right edge of the parent */
+    transform: translateX(-10%); /* Shift it left a bit */
+}
+
+
+
+.hero-nav .dropdown-content a {
+    color: #f5f5f5;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.hero-nav .dropdown-content a:hover {
+    background-color: #575757; /* Hover effect for dropdown items */
+}
+
+.hero-nav .dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+
+/* Search Bar - Modern Styling */
+.search {
+    background-color: #1e1e1e; /* Darker background for contrast */
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.search input {
+    width: 50%;
+    padding: 15px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 25px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow */
+    outline: none;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.search input:focus {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Elevate on focus */
+    background-color: #333;
+    color: #fff;
+}
+
+.search .btn {
+    padding: 12px 25px;
+    background-color: #e53935;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search .btn:hover {
+    background-color: #c62828;
+}
+
+/* Featured Movies Section */
+.featured {
+    padding: 40px 0;
+    background-color: #1e1e1e;
+}
+
+.featured h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #eee;
+}
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px; /* Space between cards */
+    justify-items: center;
+    align-items: stretch;
+}
+
+
+.movie-card {
+    display: block; /* Makes the entire card clickable */
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: inherit; /* Keeps the default color */
+    text-decoration: none; /* Removes underline from links */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.movie-card h4 {
+    margin-top: 15px;
+    font-size: 1.3em;
+    color: #eee;
+}
+.movie-card .rating {
+    font-weight: bold;
+    color: #f4c542; /* IMDb's yellow color */
+}
+
+.movie-card p {
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+/* Hover Effect for Movie Cards */
+.movie-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+/* Trending Movies Section */
+.trending {
+    padding: 40px 0;
+    background-color: #2b2b2b; /* Slightly different dark shade */
+}
+
+.trending h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #eee;
+}
+
+footer {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
